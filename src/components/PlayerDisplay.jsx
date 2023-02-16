@@ -2,12 +2,23 @@ import React from 'react'
 
 import { PlayerCard } from "./"
 
-const PlayerDisplay = () => {
+const PlayerDisplay = (props) => {
+
+    const players = props.players
 
     return(
         <div id="playerDisplay">
            
-           <PlayerCard />
+           {
+            players.map((player) => {
+
+                return(
+                    <PlayerCard player={player} key={`${player.name} id: ${player.id}`}/>
+                )
+
+            })
+           }
+           
 
         </div>
     )

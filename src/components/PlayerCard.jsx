@@ -1,20 +1,25 @@
 import React from 'react'
 
-const PlayerCard = () => {
+const PlayerCard = (props) => {
+
+    let name = props.player.name
+    let id = props.player.id
+    let picture = props.player.imageUrl
+
 
     return(
         <div id="playerCard">
             <div id="divPlayerTop">
-                <h3 id="playerName">FUCK YEAH</h3>
-                <h3 id="playerId">123</h3>
+                <h3 id="playerName">{name}</h3>
+                <h3 id="playerId">#{id}</h3>
             </div>
 
             <div id="divPlayerMiddle">
-                <img id="playerImage"></img>
+                <img src={picture} alt="" id="playerImage"></img>
             </div>
 
             <div id="divPlayerBottom">
-                <button>Show more</button>
+                <button>Show details</button>
             </div>
 
         </div>

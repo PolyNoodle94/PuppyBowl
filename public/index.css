@@ -30,18 +30,23 @@ body {
   font-size: large;
 }
 
-#playerDisplay{
+#playerDisplay {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #playerCard {
-  border: 10px solid rgb(244, 6, 6);
-  width: 200px;
-  height: 250px;
+  border: 1px solid rgb(244, 6, 6);
+  margin: 10px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 2px 2px 4px black;
 }
 
 #divPlayerTop {
-  border: 2px solid green;
+  /* border: 1px solid green; */
   display: flex;
   justify-content: space-between;
   padding: 3px;
@@ -49,14 +54,27 @@ body {
   align-items: center;
 }
 
-#divPlayerMiddle{
-  border: 5px solid orange;
-  height: 69%;
+/* #divPlayerMiddle {
+  border: 1px solid orange;
+} */
+
+#divPlayerMiddle img {
+  display: flex;
+  border-radius: 7px;
+  max-width: 100%;
+  object-fit: cover;
+  border: 1px solid black;
 }
 
 #divPlayerBottom {
-  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5%;
   padding: 3px;
-  border: solid blue 3px;
-  text-align: center;
+  /* border: 1px solid blue; */
+}
+
+#divPlayerBottom button {
+  width: 100%;
 }
