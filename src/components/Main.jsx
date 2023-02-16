@@ -1,10 +1,12 @@
 import React from "react";
-import { Navbar } from "./";
+import { SubmissionForm } from "./";
+import {PlayerDisplay} from "./"
 
 const Main = () => {
     return(
         <div id="main">
-            <Navbar />
+            <SubmissionForm />
+            <PlayerDisplay />
         </div>
     )
 }
