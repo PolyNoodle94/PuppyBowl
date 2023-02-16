@@ -29,3 +29,34 @@ body {
   margin: 10px;
   font-size: large;
 }
+
+#playerDisplay{
+  display: flex;
+}
+
+#playerCard {
+  border: 10px solid rgb(244, 6, 6);
+  width: 200px;
+  height: 250px;
+}
+
+#divPlayerTop {
+  border: 2px solid green;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  height: 10%;
+  align-items: center;
+}
+
+#divPlayerMiddle{
+  border: 5px solid orange;
+  height: 69%;
+}
+
+#divPlayerBottom {
+  height: 10%;
+  padding: 3px;
+  border: solid blue 3px;
+  text-align: center;
+}
