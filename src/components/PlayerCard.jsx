@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const PlayerCard = (props) => {
 
@@ -19,7 +20,8 @@ const PlayerCard = (props) => {
             </div>
 
             <div id="divPlayerBottom">
-                <button>Show details</button>
+                <Link to={`${id}`}><button >Show details</button></Link> 
+                {/* Right on this button, we need to make it so that onClick changes the page to /player-stats, and adds a <PlayerStats player={props.player}/> component  */ }
             </div>
 
         </div>
