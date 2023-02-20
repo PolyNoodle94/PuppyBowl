@@ -27,7 +27,7 @@ const Main = () => {
 
     return(
         <div id="main">
-            <SubmissionForm />
+            <SubmissionForm players={players} setAllPlayers={setAllPlayers} getAllPlayers={getAllPlayers} />
             <PlayerDisplay players={players}/>
         </div>
     )
